@@ -8,9 +8,9 @@
 * 발음하기 쉬운 이름을 사용하라
 * 검색하기 쉬운 이름을 사용하라
 * 인코딩을 피하라\(변수에 부가 정보를 덧붙여 표기하는 것을 뜻함.\)
-  * 헝가리안 표기법
-  * 맴버 변수 접두어
-  * 인터페이스와 구현
+    * 헝가리안 표기법
+    * 맴버 변수 접두어
+    * 인터페이스와 구현
 * 자신의 기억력을 자랑하지 마라
 * 클래스 이름
 * 메서드 이름
@@ -27,13 +27,13 @@
 * 변수의 존재 이유, 기능, 사용법 등이 변수/함수/클래스명에 드러나야 한다. 따로 주석이 필요하지 않을 정도로.  
 * 의미를 함축하거나 독자\(코드를 읽는 사람\)가 사전지식을 가지고 있다고 가정하지 말자.
 * 예시 1
-  * Bad
-    * int d; // elapsed time in days
-  * Good
-    * int elapsedTimeInDays;
-    * int daysSinceCreation;
-    * int daysSinceModification;
-    * int fileAgeInDays;
+    * Bad
+        * int d; // elapsed time in days
+    * Good
+        * int elapsedTimeInDays;
+        * int daysSinceCreation;
+        * int daysSinceModification;
+        * int fileAgeInDays;
 * 예시 2
 
 ```java
@@ -73,10 +73,10 @@ public List<int[]> getFlaggedCells() {
 * 말이 안되는 단어\(한 글자만 바꾼다던지 한 단어\), \[a1, a2, …\]과 같이 숫자로 구분하는 경우 주의  
 * 클래스 이름에 Info, Data와 같은 불용어를 붙이지 말자. 정확한 개념 구분이 되지 않음  
 * 예시  
-  * `Name` VS `NameString`
-  * `getActiveAccount()` VS `getActiveAccounts()` VS `getActiveAccountInfo()` \(이들이 혼재할 경우 서로의 역할을 정확히 구분하기 어렵다.\)
-  * `money` VS `moneyAmount`
-  * `message` VS `theMessage`
+    * `Name` VS `NameString`
+    * `getActiveAccount()` VS `getActiveAccounts()` VS `getActiveAccountInfo()` \(이들이 혼재할 경우 서로의 역할을 정확히 구분하기 어렵다.\)
+    * `money` VS `moneyAmount`
+    * `message` VS `theMessage`
 
 ## 발음하기 쉬운 이름을 사용하라
 
@@ -108,11 +108,11 @@ class Customer {
 ## 인코딩을 피하라\(변수에 부가 정보를 덧붙여 표기하는 것을 뜻함.\)
 
 * 헝가리안 표기법
-  * 변수명에 해당 변수의 타입\(String, Int 등\)을 적지 말자
-* 맴버 변수 접두어 
-  * 맴버 변수 접두어를 붙이지 말자\(???\)  
+    * 변수명에 해당 변수의 타입\(String, Int 등\)을 적지 말자
+* 맴버 변수 접두어
+    * 맴버 변수 접두어를 붙이지 말자\(???\)  
 * 인터페이스와 구현
-  * 인터페이스 클래스와 구현 클래스를 나눠야 한다면 구현 클래스의 이름에 정보를 인코딩하자.  
+    * 인터페이스 클래스와 구현 클래스를 나눠야 한다면 구현 클래스의 이름에 정보를 인코딩하자.  
 
 | Do / Don't | Interface class | Concrete\(Implementation\) class |
 | :--- | :--- | :--- |
@@ -146,14 +146,14 @@ Complex fulcrumPoint = Complex.FromRealNumber(23.0);
 ## 기발한 이름은 피하라
 
 * 특정 문화에서만 사용되는 재미있는 이름보다 의도를 분명히 표현하는 이름을 사용하라  
-  * HolyHandGrenade → DeleteItems  
-  * whack\(\) → kill\(\)  
+    * HolyHandGrenade → DeleteItems  
+    * whack\(\) → kill\(\)  
 
 ## 한 개념에 한 단어를 사용하라
 
 * 추상적인 개념 하나에 단어 하나를 사용하자.  
-  * fetch, retrieve, get  
-  * controller, manager, driver  
+    * fetch, retrieve, get  
+    * controller, manager, driver  
 
 ## 말장난을 하지 마라\(위 내용에 이어\)
 
@@ -251,4 +251,3 @@ public class GuessStatisticsMessage {
   위 a처럼 접두어를 붙이는 것은 모듈의 재사용 관점에서도 좋지 못하다. 재사용하려면 이름을 바꿔야 한다.\(eg, `GSDAccountAddress` 대신 `Address`라고만 해도 충분하다.\)  
 
 > 두려워하지 말고 서로의 명명을 지적하고 고치자. 그렇게 하면 이름을 외우는 것에 시간을 빼앗기지 않고 "자연스럽게 읽히는 코드"를 짜는 데에 더 집중할 수 있다.
-

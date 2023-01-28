@@ -4,15 +4,15 @@
 
 * [서론: 도시 만들기](chapter-11.md#1)
 * [시스템의 생성과 사용을 분리하라](chapter-11.md#2)
-  * [생성 로직을 어플리케이션의 시작이 아닌 메인으로](chapter-11.md#2-1)
-  * [팩토리 기법](chapter-11.md#2-2)
-  * [의존성 주입\(Dependency Injection\)](chapter-11.md#2-3)
+    * [생성 로직을 어플리케이션의 시작이 아닌 메인으로](chapter-11.md#2-1)
+    * [팩토리 기법](chapter-11.md#2-2)
+    * [의존성 주입\(Dependency Injection\)](chapter-11.md#2-3)
 * [스케일링](chapter-11.md#3)
-  * [Cross-Cutting Concerns\(관심 분야\)](chapter-11.md#3-1)
+    * [Cross-Cutting Concerns\(관심 분야\)](chapter-11.md#3-1)
 * [Cross-Cutting Concerns 해결을 위한 세 가지 방법](chapter-11.md#4)
-  * [자바 프록시](chapter-11.md#4-1)
-  * [순수 자바 AOP 프레임워크](chapter-11.md#4-2)
-  * [AspectJ](chapter-11.md#4-3)
+    * [자바 프록시](chapter-11.md#4-1)
+    * [순수 자바 AOP 프레임워크](chapter-11.md#4-2)
+    * [AspectJ](chapter-11.md#4-3)
 * [시스템 아키텍쳐를 테스트 주도하라\(Test Drive the System Architecture\)](chapter-11.md#5)
 * [의사 결정의 최적화하라](chapter-11.md#6)
 * [표준은 확실한 이득을 가져올 경우 추가하라](chapter-11.md#7)
@@ -208,4 +208,3 @@ A factory is the location of a concrete class in the code at which objects are c
 #### [7. Spring Framework example](chapter-11.md)
 
 [https://github.com/crowjdh/DatabaseProxyUsingAOPSample](https://github.com/crowjdh/DatabaseProxyUsingAOPSample)
-

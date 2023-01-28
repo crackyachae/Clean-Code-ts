@@ -15,4 +15,3 @@
 * [Chapter 12 - 창발성](chapter-12.md)
 * [Chapter 13 - 동시성](chapter-13.md)
 * [Chapter 14 - 점진적인 개선](chapter-14.md)
-

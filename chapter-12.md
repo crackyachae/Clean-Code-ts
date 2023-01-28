@@ -208,7 +208,6 @@ Single Responsibility Principle, 단일 책임 원칙
 
 Dependency Inversion Principle, 의존 관계 역전 원칙
 
-### [3. GOF](chapter-12.md) 
+### [3. GOF](chapter-12.md)
 
 Gang of Four의 디자인 패턴 중 하나
-

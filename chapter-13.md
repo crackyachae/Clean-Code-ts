@@ -4,32 +4,32 @@
 
 * [서론](chapter-13.md#1)
 * [동시성이 필요한 이유?](chapter-13.md#2)
-  * [미신과 오해](chapter-13.md#2-1)
+    * [미신과 오해](chapter-13.md#2-1)
 * [난관](chapter-13.md#3)
 * [동시성 방어 원칙](chapter-13.md#4)
-  * [단일 책임 원칙\(Single Responsibility Principle, SRP\)](chapter-13.md#4-1)
-  * [따름 정리\(Corollary\): 자료 범위를 제한하라](chapter-13.md#4-2)
-  * [따름 정리: 자료 사본을 사용하라](chapter-13.md#4-3)
-  * [따름 정리: 스레드는 가능한 독립적으로 구현하라](chapter-13.md#4-4)
+    * [단일 책임 원칙\(Single Responsibility Principle, SRP\)](chapter-13.md#4-1)
+    * [따름 정리\(Corollary\): 자료 범위를 제한하라](chapter-13.md#4-2)
+    * [따름 정리: 자료 사본을 사용하라](chapter-13.md#4-3)
+    * [따름 정리: 스레드는 가능한 독립적으로 구현하라](chapter-13.md#4-4)
 * [라이브러리를 이해하라](chapter-13.md#5)
-  * [스레드 환경에 안전한 컬렉션](chapter-13.md#5-1)
+    * [스레드 환경에 안전한 컬렉션](chapter-13.md#5-1)
 * [실행 모델을 이해하라](chapter-13.md#6)
-  * [생산자-소비자\(Producer-Consumer\)](chapter-13.md#6-1)
-  * [읽기-쓰기\(Readers-Writers\)](chapter-13.md#6-2)
-  * [식사하는 철학자들\(Dining Philosophers\)](chapter-13.md#6-3)
+    * [생산자-소비자\(Producer-Consumer\)](chapter-13.md#6-1)
+    * [읽기-쓰기\(Readers-Writers\)](chapter-13.md#6-2)
+    * [식사하는 철학자들\(Dining Philosophers\)](chapter-13.md#6-3)
 * [동기화하는 메서드 사이에 존재하는 의존성을 이해하라](chapter-13.md#7)
 * [동기화하는 부분을 작게 만들어라](chapter-13.md#8)
 * [올바른 종료 코드는 구현하기 어렵다](chapter-13.md#9)
 * [스레드 코드 테스트하기](chapter-13.md#10)
-  * [말이 안 되는 실패는 잠정적인 스레드 문제로 취급하라](chapter-13.md#10-1)
-  * [다중 스레드를 고려하지 않은 순차 코드부터 제대로 돌게 만들자](chapter-13.md#10-2)
-  * [다중 스레드를 쓰는 코드 부분을 다양한 환경에 쉽게 끼워 넣을 수 있게 스레드 코드를 구현하라](chapter-13.md#10-3)
-  * [다중 스레드를 쓰는 코드 부분을 상황에 맞게 조율할 수 있게 작성하라](chapter-13.md#10-4)
-  * [프로세서 수보다 많은 스레드를 돌려보라](chapter-13.md#10-5)
-  * [다른 플랫폼에서 돌려보라](chapter-13.md#10-6)
-  * [코드에 보조 코드instrument를 넣어 돌려라. 강제로 실패를 일으키게 해보라](chapter-13.md#10-7)
-    * [직접 구현하기](chapter-13.md#10-7-1)
-    * [자동화](chapter-13.md#10-7-2)
+    * [말이 안 되는 실패는 잠정적인 스레드 문제로 취급하라](chapter-13.md#10-1)
+    * [다중 스레드를 고려하지 않은 순차 코드부터 제대로 돌게 만들자](chapter-13.md#10-2)
+    * [다중 스레드를 쓰는 코드 부분을 다양한 환경에 쉽게 끼워 넣을 수 있게 스레드 코드를 구현하라](chapter-13.md#10-3)
+    * [다중 스레드를 쓰는 코드 부분을 상황에 맞게 조율할 수 있게 작성하라](chapter-13.md#10-4)
+    * [프로세서 수보다 많은 스레드를 돌려보라](chapter-13.md#10-5)
+    * [다른 플랫폼에서 돌려보라](chapter-13.md#10-6)
+    * [코드에 보조 코드instrument를 넣어 돌려라. 강제로 실패를 일으키게 해보라](chapter-13.md#10-7)
+        * [직접 구현하기](chapter-13.md#10-7-1)
+        * [자동화](chapter-13.md#10-7-2)
 * [결론](chapter-13.md#11)
 
 > “Objects are abstractions of processing. Threads are abstractions of schedule.”
@@ -384,7 +384,7 @@ Concurrency 지원 코드를 아래와 같이 여러 설정으로 실행될 수 
 
 시스템이 작업을 전환할 때에도 문제는 발생한다. 작업 전환을 빈번히 발생하게 하기 위해 프로세서 수보다 많은 스레드를 실행해 보라. 작업 전환이 잦을수록 빠뜨린 critical section이나 dead lock을 찾을 확률이 높아지게 된다.
 
-### 다른 플랫폼에서 돌려보라 
+### 다른 플랫폼에서 돌려보라
 
 우리\(저자\)는 2007년 중순 concurrent 프로그래밍 강좌를 개발했다. 강좌의 개발은 OSX에서 진행되었으며 시연은 VM상의 Windows XP에서 진행되었다. 하지만 실패를 시연하기 위해 작성된 테스트는 OSX에서는 자주 발생했지만 Windows XP에서는 OSX에서만큼 자주 발생하지 않았다.
 
@@ -516,4 +516,3 @@ Clean한 접근 방식을 사용한다면, 제대로 된 코드를 만들어낼 
 #### [9. Aspect: Chapter 11의 AOP 참조](chapter-13.md)
 
 참조: [https://github.com/Yooii-Studios/Clean-Code/blob/master/Chapter 11 - 시스템.md\#4-2](https://github.com/Yooii-Studios/Clean-Code/blob/master/Chapter%2011%20-%20시스템.md#4-2)
-

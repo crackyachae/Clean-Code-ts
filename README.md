@@ -2,11 +2,11 @@
 
 Clean Code 스터디의 결과물을 정리하기 위해 만든 저장소입니다. [gitbook 링크](https://app.gitbook.com/@innocarpe/s/clean-code)에서 편하게 살펴보실 수 있습니다.
 
-하단의 목차는 이 레포 내의 탐색을 위해 제공되고 있습니다. 
+하단의 목차는 이 레포 내의 탐색을 위해 제공되고 있습니다.
 
 ## 목차
 
-* [1장 - 클린코드](https://github.com/Yooii-Studios/Clean-Code/blob/master/Chapter%2001%20-%20깨끗한%20코드.md) 
+* [1장 - 클린코드](https://github.com/Yooii-Studios/Clean-Code/blob/master/Chapter%2001%20-%20깨끗한%20코드.md)
 * [2장 - 의미 있는 이름](https://github.com/Yooii-Studios/Clean-Code/blob/master/Chapter%2002%20-%20의미%20있는%20이름.md)  
 * [3장 - 함수](https://github.com/Yooii-Studios/Clean-Code/blob/master/Chapter%2003%20-%20함수.md)  
 * [4장 - 주석](https://github.com/Yooii-Studios/Clean-Code/blob/master/Chapter%2004%20-%20주석.md)  
@@ -20,4 +20,3 @@ Clean Code 스터디의 결과물을 정리하기 위해 만든 저장소입니�
 * [12장 - 창발성](https://github.com/Yooii-Studios/Clean-Code/blob/master/Chapter%2012%20-%20창발성.md)  
 * [13장 - 동시성](https://github.com/Yooii-Studios/Clean-Code/blob/master/Chapter%2013%20-%20동시성.md)  
 * [14장 - 점진적인 개선](https://github.com/Yooii-Studios/Clean-Code/blob/master/Chapter%2014%20-%20점진적인%20개선.md)  
-

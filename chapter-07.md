@@ -127,10 +127,10 @@
 * Checked exception VS Unchecked Exception\(참조 1\)
 * 예외처리에 드는 비용 대비 이득을 생각해봐야 한다.
 * 예시
-  * 1. 특정 메소드에서 checked exception을 throw하고
-  * 1. 3단계\(메소드 콜\) 위의 메소드에서 그 exception을 catch한다면
-  * 1. 모든 중간단계 메소드에 exception을 정의해야 한다.\(자바의 경우 메소드 선언에 throws 구문을 붙이는 등\)
-  * Open/Closed Principle violation\(참조 2\)
+    * 1. 특정 메소드에서 checked exception을 throw하고
+    * 1. 3단계\(메소드 콜\) 위의 메소드에서 그 exception을 catch한다면
+    * 1. 모든 중간단계 메소드에 exception을 정의해야 한다.\(자바의 경우 메소드 선언에 throws 구문을 붙이는 등\)
+    * Open/Closed Principle violation\(참조 2\)
 * 상위 레벨 메소드에서 하위 레벨 메소드의 디테일에 대해 알아야 하기 때문에 캡슐화 또한 깨진다.
 * 필요한 경우 checked exceptions를 사용해야 되지만 일반적인 경우 득보다 실이 많다.
 
@@ -142,9 +142,9 @@
 
 * Exception class를 만드는 데에서 가장 중요한 것은 "어떤 방식으로 예외를 잡을까"이다.
 * 써드파티 라이브러리를 사용하는 경우 그것들을 wrapping함으로써
-  * 1. 라이브러리 교체 등의 변경이 있는 경우 대응하기 쉬워진다.
-  * 1. 라이브러리를 쓰는 곳을 테스트할 경우 해당 라이브러리를 가짜로 만들거나 함으로써 테스트하기 쉬워진다.
-  * 1. 라이브러리의 api 디자인에 종속적이지 않고 내 입맛에 맞는 디자인을 적용할 수 있다.
+    * 1. 라이브러리 교체 등의 변경이 있는 경우 대응하기 쉬워진다.
+    * 1. 라이브러리를 쓰는 곳을 테스트할 경우 해당 라이브러리를 가짜로 만들거나 함으로써 테스트하기 쉬워진다.
+    * 1. 라이브러리의 api 디자인에 종속적이지 않고 내 입맛에 맞는 디자인을 적용할 수 있다.
 * 보통 특정 부분의 코드에는 exception 하나로 충분히 예외처리 할 수 있다.
 * 한 exception만 잡고 나머지 하나는 다시 throw하는 경우 등 정말 필요한 경우에만 다른 exception 클래스를 만들어 사용하자.
 * 예시: 외부 api의 클래스인 ACMEPort 클래스를 사용하는 상황을 살펴보자.
@@ -210,8 +210,8 @@
 * 일반적으로는 위에서 봤던 방식들이 유용하지만, catch문에서 예외적인 상황\(special case\)을 처리해야 하는 경우 코드가 더러워지는 일이 발생할 수 있다.
 * 이런 경우, Martin Fowler의 Special Case Pattern을 사용하자.\(참조 3\)
 
-  * 1. 코드를 부르는 입장에서 예외적인 상황을 신경쓰지 않아도 된다.
-  * 1. 예외상황은 special case object 내에 캡슐화된다.
+    * 1. 코드를 부르는 입장에서 예외적인 상황을 신경쓰지 않아도 된다.
+    * 1. 예외상황은 special case object 내에 캡슐화된다.
 
        \`\`\`java
 
@@ -347,4 +347,3 @@ The Open Close Principle states that the design and writing of the code should b
 
 * [http://www.captaindebug.com/2011/04/null-return-values-and-special-case.html\#.VM9VUsbLgXR](http://www.captaindebug.com/2011/04/null-return-values-and-special-case.html#.VM9VUsbLgXR)  
 * [http://martinfowler.com/eaaCatalog/specialCase.html](http://martinfowler.com/eaaCatalog/specialCase.html)
-
