@@ -419,7 +419,7 @@ class GuessStatisticsMessage {
 }
 ```
 
-- \# 문법 관련[^private-method]
+- `#` 문법 관련[^private-method]
     - [은닉을 향한 자바스크립트의 여정](https://ui.toast.com/weekly-pick/ko_20200312)
     - [Private class fields](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Classes/Private_class_fields) by MDN
 
