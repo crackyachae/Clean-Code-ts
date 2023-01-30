@@ -65,6 +65,8 @@ public List<int[]> getFlaggedCells() {
 }
 ```
 
+TypeScript 코드
+
 </details>
 
 ```ts
@@ -121,7 +123,7 @@ function getThem(): number[][] {
 
 ## 발음하기 쉬운 이름을 사용하라  
 
-<details></details>
+<details>
     <summary>원문 java 코드</summary>
 
 ```java
@@ -143,6 +145,8 @@ class Customer {
     /* ... */
 };
 ```
+
+TypeScript 코드
 
 </details>
 
@@ -206,7 +210,7 @@ class Customer {
 - 접근자, 변경자, 조건자는 get, set, is로 시작하자. (추가: should, has 등도 가능)
 - 생성자를 오버로드할 경우 정적 팩토리 메서드를 사용하고 해당 생성자를 private으로 선언한다.
 
-<details></details>
+<details>
     <summary>원문 java 코드</summary>
 
 ```java
@@ -214,6 +218,8 @@ class Customer {
 Complex fulcrumPoint = new Complex(23.0);  
 Complex fulcrumPoint = Complex.FromRealNumber(23.0);  
 ```
+
+TypeScript 코드
 
 </details>
 
@@ -240,13 +246,15 @@ const fulcrumPoint = Complex.FromRealNumber(23.0);
 - 한 단어를 두 가지 목적으로 사용하지 말자. 아래와 같은 경우 두 함수는 다른 동작을 수행하므로 이름을 바꿔주어야 한다.
     - e.g., 두 번째 함수의 이름을 insert나 append도 변경
 
-<details></details>
+<details>
     <summary>원문 java 코드</summary>
 
 ```java
 public static String add(String message, String messageToAppend)  
 public List<Element> add(Element element)  
 ```
+
+TypeScript 코드
 
 </details>
 
@@ -341,6 +349,8 @@ public class GuessStatisticsMessage {
     }
 }
 ```
+
+TypeScript 코드
 
 </details>
 
